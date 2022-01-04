@@ -1,0 +1,27 @@
+<div class="flex-container" fxLayoutAlign="space-between center" fxLayout="row">
+<mat-toolbar  color='primary' >
+    <ul class="flex-item" flex fxLayoutGap="15px" class="navigation-items">
+        <li flex ><mat-icon id="shopicon" routerLink="cart" >shopping_cart</mat-icon></li>
+        <li fxShow.xs="false" fxFlex> <a routerLink=''>Chi siamo</a></li>
+        <li fxShow.xs="false" fxFlex> <a routerLink=''>Negozi</a></li>
+        </ul>
+    <div class="flex-item" fxFlex fxLayoutAlign="center">
+
+        <img src="/assets/logo.svg" id="logo" alt="" srcset="">
+    </div>
+    
+    <div class="flex-item"  fxShow="true" fxShow.xs="false">
+        <ul flex fxLayoutGap="15px" class="navigation-items">
+            <li fxFlex > <a color='accent' routerLink='admin'>Admin</a></li>
+            <li fxFlex> <a routerLink='products'>Prodotti</a></li>
+            <li fxFlex> <a routerLink=''>Home</a></li>
+        </ul>
+    </div>
+   
+    <div   fxHide.gt-xs>
+        <button mat-icon-button (click)= onToggleSidenav()>
+            <mat-icon class="menu">menu</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+</div>

@@ -1,0 +1,26 @@
+
+<div class="container ">
+    <div class="row  justify-content">
+        <div  class="col-sm-5  productImg ">
+            <h4>{{ProductDetails?.name}}</h4>
+            <img src={{ProductDetails.img}} class="productImage" alt="" >
+        </div>
+        <div class="col-sm-5 mt-2 ">
+            
+            <p class="pt-3 colRed font-weight-bold">Prezzo: <span>{{ProductDetails?.price}}</span> €</p>
+            
+         
+            <p>{{ProductDetails?.description}}</p>
+            <button id="button" (click)="addToCart(product)" class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+        </div>
+
+    </div>
+</div>

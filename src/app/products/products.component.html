@@ -1,0 +1,32 @@
+<div class="shopHero">
+    <div class="container">
+        <div class="flex-item" fxLayoutAlign="center center">
+            <h3 class="shopHeader">
+                Shop your heart out, it’s a jungle out <br>
+                <strong>
+                    Shopping all products
+                </strong>
+                    
+                
+            </h3>
+        </div>
+    </div>
+</div>
+
+    <div class="container"> 
+        <div class="card-deck row">
+            
+
+                <div  class="card col-6 box " *ngFor="let product of productes"><a (click)="sendObjects(product)">
+                    <img width="500px" height="400px" class="card-img-top" src={{product.img}} alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">{{product.name}} </h4>
+                        <p class="card-text"> </p>
+                   
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+
+   
